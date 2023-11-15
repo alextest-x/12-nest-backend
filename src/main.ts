@@ -19,7 +19,13 @@ async function bootstrap() {
     })
   );
 
+  //puerto a donde se conecat el servidor del backend local
+  //await app.listen(3000);
 
-  await app.listen(3000);
+  //lo cambiamos al puerto donde se va instalar
+  //si esta disponible el puerto .PORT usa este sino usa el 3000
+  await app.listen( process.env.PORT ?? 3000);
+
+
 }
 bootstrap();

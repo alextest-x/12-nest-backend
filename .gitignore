@@ -2,7 +2,7 @@
 /dist
 /node_modules
 
-#variables que no va,os a subir al repositorio
+#variables que no vamos a subir al repositorio
 mongo/
 .env
 
